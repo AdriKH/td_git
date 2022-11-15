@@ -5,9 +5,15 @@ def upCase(text):
     text = text.upper()
     pass
 
+letters = "qwertyuiopasdfghjklzxcvbnm1234567890QWERTYUIOPASDFGHJKLZXCVBNM"
+
 def deleteCaracter(text):
-    for i in range(text.len()):
-        charSpe(text[i])
+    for i in range(len(text)):
+        for j in range(len(letters)):
+            if text[i] == letters[j]:
+                break
+            else:
+                text[i] = charSpe(text[i])
     pass
 
 def charSpe(char):
@@ -16,3 +22,6 @@ def charSpe(char):
     elif char == "à" or char == "â" or char == "ä":
         char = "a"        
     return char
+
+deleteCaracter(text)
+print(text)
