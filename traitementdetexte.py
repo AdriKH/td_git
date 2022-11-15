@@ -1,3 +1,6 @@
+print("entrer votre texte")
+input("texte")
+
 def upCase(text):
     text = text.upper()
     pass
