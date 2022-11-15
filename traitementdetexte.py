@@ -8,5 +8,8 @@ def deleteCaracter(text):
     pass
 
 def charSpe(char):
-    if char == "é" or char == "ê":
-        return char = "e"
+    if char == "é" or char == "ê" or char == "ë":
+        char = "e"
+    elif char == "à" or char == "â" or char == "ä":
+        char = "a"        
+    return char
