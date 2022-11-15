@@ -1,5 +1,5 @@
 print("entrer votre texte")
-input("texte")
+text = input("texte")
 
 def upCase(text):
     text = text.upper()
